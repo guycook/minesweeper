@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Minesweeper</title>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="ms.css">
 	<script src="d3.v3.js"></script>
@@ -11,11 +12,12 @@
 <body>
 	<div class="page">
 		<h2>Minesweeper</h2>
-		<label>Width <input name="boardwidth" id="boardwidth"></label>
-		<label>Height <input name="boardheight" id="boardheight"></label>
-		<label>Mines <input name="nummines" id="nummines"></label>
+		<label>Width <input type="text" name="boardwidth" id="boardwidth" value="8"></label>
+		<label>Height <input type="text" name="boardheight" id="boardheight" value="8"></label>
+		<label>Mines <input type="text" name="nummines" id="nummines" value="10"></label>
 		<button class="newgame">New Game</button>
 		<div class="minefield"></div>
+		<label>X-Ray <input name="xr" id="xr" type="checkbox"></label>
 	</div>
 	<script src="ms.js"></script>
 </body>
