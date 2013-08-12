@@ -1,3 +1,43 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
 body {
-	color: blue;
+	color: #6FC3DF;
+	text-shadow: 0 0 3px #E6FFFF;
+	background-color: #0C141F;
+	background-image: radial-gradient(#0E1D2B, #0C141F);
+}
+
+.page {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.base rect {
+	fill: #002000;
+	stroke: white;
+	stroke-width: 1px;
+}
+
+.base text {
+	fill: white;
+	stroke: none;
+	text-anchor: middle;
+	dominant-baseline: middle;
+}
+
+.base .cover {
+	fill: #aaa;
+	stroke: #666;
+	/*fill: rgba(255, 255, 255, 0.5);*/
 }
